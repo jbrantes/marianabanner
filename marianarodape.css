@@ -1,0 +1,79 @@
+hr {
+    margin: 0;
+}
+
+.rodapé {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.lista-rodapé {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .rodapé {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lista-rodapé {
+        display: block;
+    }
+
+    .lista-rodapé__item {
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+
+    .lista-rodapé__link {
+        color: var(--cinza);
+        text-decoration: none;
+        margin-left: 0.6em;
+    }
+
+    .lista-rodapé__titulo {
+        font-size: 14px;
+        color: var(--cinza-claro);
+    }
+
+    .rodapé__titulo {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .lista-rodapé {
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1em;
+    }
+}
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002F52;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
